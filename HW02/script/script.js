@@ -1,6 +1,6 @@
-let number1 = 5;
+let number1 = Number(prompt('Введіть число 1: '));
 
-let number2 = 7;
+let number2 = Number(prompt('Введіть число 2: '));
 // також можна використати === для перевірки не тільки значень, а і типу змінної 
 if (number1 == number2) {
     alert('Числа рівні');
