@@ -8,9 +8,9 @@ if (number1 == number2) {
     alert ('Числа не рівні');
 }
 //Програма для обчислення площі прямокутника
-let lengthTriangle = Number(prompt("Введіть довжину прямокутника: "));
+let lengthTriangle = Number(prompt('Введіть довжину прямокутника: '));
 
-let widthTriangle = Number(prompt("Введіть ширину прямокутника: "));
+let widthTriangle = Number(prompt('Введіть ширину прямокутника: '));
 
 let area = lengthTriangle * widthTriangle;
 console.log(`Площа прямокутника: ${area}`);
@@ -24,7 +24,7 @@ console.log(`Периметр трикутника: ${perimeter}`);
 function Fahrenheit (celsius){
     return (celsius * 9/5) + 32;
 }
-let tempCelsius = parseFloat(prompt("Введіть температуру в Цельсія: "));
+let tempCelsius = parseFloat(prompt('Введіть температуру в Цельсія: '));
 
 let tempFahrenheit = Fahrenheit(tempCelsius);
 console.log(`Температура в Фаренгейтах: ${tempFahrenheit}`);
