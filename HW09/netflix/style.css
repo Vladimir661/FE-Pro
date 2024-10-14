@@ -1,0 +1,473 @@
+*{
+    box-sizing: border-box;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-medium {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.inter-extra-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body{
+    background-image: url(img/Netflix.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1117px;
+    margin: 0 auto;
+}
+header{
+    padding: 42px 33px 118px 40px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.logo-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-text{
+    color: rgb(200, 200, 200);
+}
+.logo-text span{
+    padding-left: 23px;
+    margin-left: 56px;
+    border-left:  3px solid rgb(200, 200, 200);
+}
+
+.fa-solid{
+    margin-right: 19px;
+    color: rgb(255, 255, 255);
+}
+.search-avatar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+.content-wrapper{
+    width: 57%;
+    height: auto;
+    color: rgb(255, 255, 255);
+    padding: 0px 0px 25px 40px;
+}
+.genre {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.genre span {
+    font-size: 16px;
+    color: white;
+
+}
+.name{
+    font-size: 64px;
+    width: 100%;
+    letter-spacing: 5.5%;
+}
+.information{
+    display: flex;
+    flex-direction: row;
+}
+.gray{
+    color: rgb(167, 166, 166);
+}
+.text{
+    padding-left: 10px;
+}
+h2 span{
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left:  3px solid rgb(200, 200, 200);
+}
+.description{
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 49px 0 60px 0;
+    width: 20%;
+    height: auto;
+}
+.star{
+    width: 31px;
+    height: 31px;
+}
+.yellow-star{ 
+   color: rgb(255, 234, 43);
+}
+.white-star{
+    color: rgb(255, 255, 255);
+}
+
+.yellow-star::after{
+    padding-left: 5px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 57%;
+}
+.stream{
+    width: 272px;
+    height: 64px;
+    font-size: 22px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(213, 13, 31);
+    background: rgb(213, 13, 31);
+}
+.all{
+    width: 271px;
+    height: 64px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: transparent;
+}
+.popular{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular h2{
+    font-size: 22px;
+    letter-spacing: 13.5%;
+    color: rgb(255, 255, 255);
+}
+.circles{
+    display: flex;
+    justify-content: space-between;
+    width: 103px;
+}
+.circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(167, 166, 166);
+    background-color: transparent;
+}
+.popular-w{
+    width: 57%;
+    height: auto;
+    padding: 0 0 40px 40px;
+}
+.chevron{
+    margin: 18px 10px 10px 10px;
+    color: rgb(167, 166, 166);
+}
+.circle:hover .chevron{
+    color: rgb(255, 255, 255);
+}
+.circle:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+}
+.images{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.image{
+    width: 17%;
+}
+.image img{
+    width: 100%;
+}
+.sixteen{
+    bottom: 10%;
+    right: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.sixteen-red{
+    width: 33px;
+    height: 66px;
+    background-color: rgb(213, 13, 31);
+}
+.sixteen-gray{
+    width: 141px;
+    height: 66px;
+    padding-right: 36px;
+    background: rgba(255, 255, 255, 0.49);
+    border: none;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+@media (340px<= width <=540px){
+    body{
+        min-height: 1117px;
+    }
+}
+@media (340px<= width <=540px){
+    header{
+        width: 100%;
+        height: auto;
+        padding: 20px 20px 25px 20px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .logo-name{
+        justify-content: space-between;
+    }
+    .logo-text span{ 
+        font-size: 20px;
+        padding-left: 0px;
+        margin-left: 0px;
+        border-left: none;
+    }
+    .search-avatar{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (340px<= width <=540px){
+    .content-wrapper {
+        width: 100%;
+        padding: 0px 0px 0px 15px;
+    }
+    .genre {
+        justify-content: center;
+        padding: 0px 10px;
+        }
+    h2 span {
+        padding-left: 5px;
+        margin-left: 5px;
+        border-left: 1px solid rgb(200, 200, 200);
+    }
+    .name{
+        text-align: center;
+        font-size: 42px;
+    }
+    .information{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    /* .description{
+        text-align: center;
+    } */
+    .stars{
+        justify-content: space-evenly;
+        padding: 20px 0 30px 0;
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        height: auto;
+        padding: 0 10px 0 0;
+    }
+    .stream{
+        width: 45%;
+        height: auto;
+        font-size: 18px;
+    }
+    .all{
+        width: 45%;
+        height: auto;
+        font-size: 18px;
+    }
+    .fa-solid{
+        margin-right: 0px;
+    }
+
+}
+@media (340px<= width <=540px){
+    .popular-w{
+        width: 100%;
+        padding: 0 5px 10px 20px;
+    }
+    .popular{
+        width: 80%;
+        padding-top: 5px;
+        padding-right: 5px;
+    }
+    .popular h2{
+        font-size: 15px;
+    }
+    .circles{
+        width: 100px;
+    }
+    .circle{
+        width: 35px;
+        height: 35px;
+    }
+    .chevron{
+        margin: 16px 10px 10px 7px;
+        padding: 1px 2px 0px 3px;
+    }
+    .images{
+        width: 77%;
+    }
+    .sixteen{
+        width: 13%;
+        height: auto;
+        bottom: 1.2%;
+    }
+    .sixteen-red{
+        width: 15px;
+        height: 17px;
+    }
+    .sixteen-gray{
+        width: 44px;
+        height: 17px;
+        font-size: 10px;
+    }
+}
+@media (768px<= width <=1024px){
+    body{
+        min-height: 1370px;
+        padding: 0px 0px 25px 20px;
+    }
+    header{
+        padding: 42px 33px 160px 0px;
+    }
+    .content-wrapper{
+        width: 100%;
+        padding: 0px 0px 25px 0px;
+    }
+    .name{
+        padding: 20px 0 20px 0;
+    }
+    .genre{
+        font-size: 20px;
+        gap: 30px;
+    }
+    .information{
+        font-size: 18px;
+    }
+    h2 span{
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+    .description{
+        font-size: 32px;
+    }
+    .stars{
+        width: 30%;
+    }
+    .button{
+        width: 70%;
+        height: 50px;
+    }
+    .stream{
+        width: 45%;
+    }
+    .all{
+        width: 45%;
+    }
+    .popular-w{
+        width: 87%;
+        padding: 40px 0 0px 0px;
+    }
+    .popular h2{
+        font-size: 25px;
+    }
+    .images{
+        padding-top: 40px;
+    }
+    .image{
+        width: 18%;
+    }
+    .sixteen{
+        width: 11%;
+    }
+    .sixteen-red{
+        width: 17px;
+        height: 33px;
+    }
+    .sixteen-gray{
+        width: 74px;
+        height: 33px;
+        font-size: 19px;
+    }
+}
+@media (1024px<= width <=1270px){
+    body{
+        min-height: 1370px;
+    }
+    .genre{
+        font-size: 30px;
+        gap: 50px;
+    }
+    .name{
+        font-size: 76px;
+    }
+    .information{
+        font-size: 23px;
+    }
+    h2 span{
+        padding-left: 25px;
+        margin-left: 25px;
+    }
+    .description{
+        font-size: 40px;
+    }
+    .button{
+        width: 80%;
+    }
+    .popular h2{
+        font-size: 30px;
+    }
+
+}
+@media (1280px<= width <=1440px) {
+    .logo-text span{
+        font-size: 28px;
+    }
+    .genre{
+        font-size: 20px;
+    }
+    .description{
+        font-size: 30px;
+    }
+    .stars{
+        width: 35%;
+    }
+    .button{
+        width: 100%;
+    }
+    .popular-w{
+        width: 75%;
+    }
+    .popular h2{
+        font-size: 25px;
+    }
+}
