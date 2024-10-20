@@ -58,7 +58,7 @@ document.addEventListener('keydown', function(e) {
             break;
         case 'ArrowLeft':
             if (posEl.x - step >= 0) {
-                posEl.x -= step; //
+                posEl.x -= step;
             }
             break;
         case 'ArrowRight':
