@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Task 1 -->
+    <h1>Зміна кольору BG</h1>
+    <form class="colorChangeForm">
+        <label>
+            <input type="radio" name="color" value="red"> Червоний 
+        </label>
+        <label>
+            <input type="radio" name="color" value="green"> Зелений 
+        </label>
+        <label>
+            <input type="radio" name="color" value="blue"> Синій
+        </label>
+        <label>
+            <input type="radio" name="color" value="white"> Білий
+        </label>
+    </form>
+    <!-- Task 2 -->
+    <h1>Виберіть країну:</h1>
+    <select class="countrySelect">
+        <option value="">-- Виберіть країну --</option>
+        <option value="ua">Україна</option>
+        <option value="pl">Польща</option>
+        <option value="us">США</option>
+        <option value="de">Німеччина</option>
+    </select>
+    <div class="countryInfo"></div>
+    <!-- Task 3 -->
+    <button class="countBtn">Старт лічильника</button>
+    <h1 class="count">Count: 0 </h1>
+    <!-- Task 4 -->
+    <div class="Timer">
+        <div class="wrapper">
+            <div class="circle">
+                <div class="time" id="timer">25:00</div>
+            </div>
+            <div class="buttons">
+                <button class="button" id="startBtn">Start</button>
+                <button class="button" id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>
