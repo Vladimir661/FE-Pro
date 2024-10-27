@@ -32,9 +32,9 @@ const submitBtn = document.querySelector('#submitBtn');
 function validateForm() {
     const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
     const passwordValid = /^[A-Za-z\d]{8,}$/.test(password.value) &&
-                      /[A-Z]/.test(password.value) &&
-                      /\d/.test(password.value);
-      submitBtn.disabled = !(emailValid && passwordValid);
+                         /[A-Z]/.test(password.value) &&
+                        /\d/.test(password.value);
+    submitBtn.disabled = !(emailValid && passwordValid);
 }
 
 email.addEventListener('input', validateForm);
