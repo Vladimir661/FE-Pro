@@ -26,7 +26,7 @@ function compareNumbers (a, b) {
         else if (b > a) {
            resolve (`${b} більше за ${a}`);
         } else {
-            reject (new Error("Числа рівні"));
+            reject (new Error('Числа рівні'));
         }
     })
 }
