@@ -12,7 +12,6 @@ async function getFetchUser (userId) {
 
 // getFetchUser(2);
 // getFetchUser(10);
-
 //Task 2 
 async function getFetchFilm (filmId) {
     try {
