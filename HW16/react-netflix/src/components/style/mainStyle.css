@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-medium {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.inter-extra-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body{
+    background-image: url(img/Netflix.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1117px;
+    margin: 0 auto;
+}
+header{
+    padding: 42px 33px 118px 40px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.logo-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-text{
+    color: rgb(200, 200, 200);
+}
+.logo-text span{
+    padding-left: 23px;
+    margin-left: 56px;
+    border-left:  3px solid rgb(200, 200, 200);
+}
+
+.loginButton {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.loginButton:hover {
+    background-color: rgb(255, 37, 37);
+    box-shadow:
+     rgba(136, 165, 191, 0.48) 3px 1px 8px 0px,
+     rgba(255, 255, 255, 0.5) -3px -1px 8px 0px;
+}
+.fa-magnifying-glass {
+    margin-right: 19px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search-input-container {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: width 0.4s ease, opacity 0.4s ease;
+}
+.search-input-container.active {
+    width: 300px;
+    opacity: 1;
+}
+.search-input {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.search-input:focus {
+    border-color: rgb(7, 209, 240);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.search-avatar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+.content-wrapper{
+    width: 57%;
+    height: auto;
+    color: rgb(255, 255, 255);
+    padding: 0px 0px 25px 40px;
+}
+.genre{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+}
+.genre span{
+    padding-right: 10px;
+}
+.name{
+    font-size: 64px;
+    width: 100%;
+    letter-spacing: 5.5%;
+}
+.information{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.gray{
+    color: rgb(167, 166, 166);
+}
+.text{
+    font-size: 29px;
+    padding-left: 10px;
+}
+h2 span{
+    text-align: center;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left:  3px solid rgb(200, 200, 200);
+}
+.description{
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 49px 0 60px 0;
+    gap: 20px;
+    width: 20%;
+    height: auto;
+}
+.star{
+    width: 31px;
+    height: 31px;
+}
+.yellow-star{ 
+   color: rgb(255, 234, 43);
+}
+.white-star{
+    color: rgb(255, 255, 255);
+}
+
+.yellow-star::after{
+    padding-left: 5px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.stream{
+    width: 272px;
+    height: 64px;
+    font-size: 22px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(213, 13, 31);
+    background: rgb(213, 13, 31);
+}
+.fa-circle-play{
+    padding-left: 10px;
+}
+.all{
+    width: 271px;
+    height: 64px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: transparent;
+}
+.popular{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular h2{
+    font-size: 22px;
+    letter-spacing: 13.5%;
+    color: rgb(255, 255, 255);
+}
+.circles{
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    gap: 30px;
+    color: rgb(130, 128, 128);
+}
+.circle-left:hover{
+    color: rgb(255, 255, 255);
+}
+.circle-right:hover{
+    color: rgb(255, 255, 255);
+}
+.circles .fa-circle{
+    position: absolute;
+}
+.fa-chevron-left{
+    padding: 3px 5px 4px 7px;
+    position: relative;
+}
+.fa-chevron-right{
+    padding: 3px 5px 4px 7px;
+    position: relative;
+}
+.popular-d{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* .chevron{
+    margin: 18px 10px 10px 10px;
+    color: rgb(167, 166, 166);
+}
+.circle:hover .chevron{
+    color: rgb(255, 255, 255);
+}
+.circle:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+} */
+.sixteen{
+    bottom: 10%;
+    right: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.sixteen-red{
+    width: 33px;
+    height: 66px;
+    background-color: rgb(213, 13, 31);
+}
+.sixteen-gray{
+    width: 141px;
+    height: 66px;
+    padding-right: 36px;
+    background: rgba(255, 255, 255, 0.49);
+    border: none;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
